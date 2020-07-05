@@ -6,13 +6,14 @@
       <H1>
         PERSONAL PROFILE PAGE ! - 
           <%= stafflist[i].Name %>
-          <%= stafflist[i].Infomation %>
         </H1>
     </div>
     <HR>
 
     <P><img src="/images/<%= stafflist[i].urlImg%>"></P>
-
+    <div class="alert alert-primary">
+    <P>Information: <%= stafflist[i].Information %> </P>
+  </div> 
 <% } %>
 
 <%- include('partials/footer') -%>
